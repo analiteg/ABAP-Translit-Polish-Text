@@ -12,5 +12,5 @@ Using this approach makes sence only when using regular expressions is impossibl
 
 ### Example
 
-* Input:  Szkoła Podstawowa Nr 47 im. Jana Klemensa Branickiego w Białymstoku
-* Output: Szkola Podstawowa Nr 47 im. Jana Klemensa Branickiego w Bialymstoku
+* Input:  Szkoła Podstawowa Nr 29 im. Synów Pułku Zespół Szkół Ogólnokształcących Mistrzostwa Sportowego Nr 2 w Białymstoku
+* Output: Szkola Podstawowa Nr 29 im. Synow Pulku Zespol Szkol Ogolnoksztalcacych Mistrzostwa Sportowego Nr 2 w Bialymstoku
