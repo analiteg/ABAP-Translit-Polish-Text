@@ -13,11 +13,11 @@ CLASS zcl_translit_polish IMPLEMENTATION.
     " Step 1 - Create Instance (singleton)
     DATA(mo_route) = lcl_translit=>create_instance( ).
     " Step 2 - Get Text
-    DATA polish_text TYPE string.
-    polish_text = 'Szkoła Podstawowa Nr 47 im. Jana Klemensa Branickiego w Białymstoku'.
+    DATA lv_polish_text TYPE string.
+    lv_polish_text = 'Szkoła Podstawowa Nr 47 im. Jana Klemensa Branickiego w Białymstoku'.
 
     TRY.
-        out->write( mo_route->translit_polish( polish_text ) ).
+        out->write( mo_route->translit_polish( lv_polish_text ) ).
       CATCH cx_root INTO DATA(exc).
         out->write( exc->get_text( ) ).
     ENDTRY.

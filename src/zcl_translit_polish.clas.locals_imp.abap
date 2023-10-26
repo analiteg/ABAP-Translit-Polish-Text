@@ -52,18 +52,18 @@ CLASS lcl_translit IMPLEMENTATION.
                            ( psymbol   = 'Ź' usimbol = 'Z' ) ).
 
     DATA(lv_string) = iv_string.
-    DATA index    TYPE i.
-    DATA char     TYPE c LENGTH 1.
-    DATA new_char TYPE c LENGTH 1.
-    DATA(length) = strlen( lv_string ).
+    DATA lv_index    TYPE i.
+    DATA lv_char     TYPE c LENGTH 1.
+    DATA lv_new_char TYPE c LENGTH 1.
+    DATA(lv_length) = strlen( lv_string ).
 
-    WHILE index < length.
-      char = lv_string+index(1).
-      IF line_exists( lt_translit[ psymbol = char ] ).
-        new_char = lt_translit[ psymbol = char ]-usimbol.
-        REPLACE char WITH new_char INTO lv_string.
+    WHILE lv_index < lv_length.
+      lv_char = lv_string+lv_index(1).
+      IF line_exists( lt_translit[ psymbol = lv_char ] ).
+        lv_new_char = lt_translit[ psymbol = lv_char ]-usimbol.
+        REPLACE lv_char WITH lv_new_char INTO lv_string.
       ENDIF.
-      index += 1.
+      lv_index += 1.
     ENDWHILE.
 
     rv_string = lv_string.
