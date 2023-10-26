@@ -1,2 +1,2 @@
-# abap_translit_polish_text
+# ABAP Transliteration Polish Text
 Transliteration Polish Text
