@@ -9,3 +9,8 @@ Overall, in Polish, we have 18 symbols (9 in lowercase and 9 in uppercase), whic
 
 ### Important. 
 Using this approach makes sence only when using regular expressions is impossible.
+
+### Example
+
+* Input:  Szkoła Podstawowa Nr 47 im. Jana Klemensa Branickiego w Białymstoku
+* Output: Szkola Podstawowa Nr 47 im. Jana Klemensa Branickiego w Bialymstoku
