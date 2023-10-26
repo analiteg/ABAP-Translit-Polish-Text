@@ -14,7 +14,7 @@ CLASS zcl_translit_polish IMPLEMENTATION.
     DATA(mo_route) = lcl_translit=>create_instance( ).
     " Step 2 - Get Text
     DATA lv_polish_text TYPE string.
-    lv_polish_text = 'Szkoła Podstawowa Nr 47 im. Jana Klemensa Branickiego w Białymstoku'.
+    lv_polish_text = 'Szkoła Podstawowa Nr 29 im. Synów Pułku Zespół Szkół Ogólnokształcących Mistrzostwa Sportowego Nr 2 w Białymstoku'.
 
     TRY.
         out->write( mo_route->translit_polish( lv_polish_text ) ).
